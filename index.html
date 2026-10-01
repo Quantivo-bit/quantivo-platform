@@ -6,7 +6,8 @@
   <meta name="description" content="Quantivo is an AI-powered quantitative crypto research and paper-trading platform." />
   <meta name="theme-color" content="#07142f" />
   <title>Quantivo — Quantitative Crypto Intelligence</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="quantivo-release" content="v2-2026-10-02" />
+  <link rel="stylesheet" href="styles.css?v=20261002-v2" />
 </head>
 <body>
   <div class="background-grid" aria-hidden="true"></div>
@@ -27,9 +28,10 @@
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="#platform">Platform</a>
+      <a href="#capabilities">Capabilities</a>
       <a href="#method">Method</a>
       <a href="#universe">Universe</a>
-      <a href="#about">About</a>
+      <a href="#roadmap">Roadmap</a>
       <a class="nav-cta" href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
     </nav>
   </header>
@@ -38,13 +40,14 @@
     <section class="hero section-shell">
       <div class="hero-copy reveal">
         <div class="eyebrow"><span class="pulse-dot"></span> Quantitative research, made practical</div>
-        <h1>Turn market noise into <em>measured decisions.</em></h1>
-        <p class="hero-text">Quantivo brings market data, machine learning and paper trading into one disciplined workspace for crypto research.</p>
+        <h1>Your AI research desk for <em>measured decisions.</em></h1>
+        <p class="hero-text">Quantivo brings market data, machine learning, strategy testing and paper trading into one disciplined workspace for crypto research.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#platform">Explore the platform <span>↓</span></a>
-          <a class="button button-ghost" href="#method">How it works <span>→</span></a>
+          <a class="button button-primary" href="#capabilities">Explore the workspace <span>↓</span></a>
+          <a class="button button-ghost" href="#method">See the workflow <span>→</span></a>
         </div>
-        <div class="hero-note"><span class="shield-icon">◆</span> Research-first by design. No real orders are sent from this landing platform.</div>
+        <div class="hero-note"><span class="shield-icon">◆</span> Paper-first by design. No real orders are sent from this public website.</div>
+        <div class="hero-chips"><span>AI-assisted research</span><span>Versioned models</span><span>Human review</span></div>
       </div>
 
       <div class="hero-visual reveal delay-one" aria-label="Quantivo dashboard preview">
@@ -105,9 +108,28 @@
       </div>
     </section>
 
+    <section id="capabilities" class="capabilities-section section-shell">
+      <div class="section-heading reveal"><span class="section-kicker">02 / PRODUCT SUITE</span><h2>One workspace. Four ways to think.</h2><p>Bring the most important parts of systematic research into a single, calm interface.</p></div>
+      <div class="capability-layout">
+        <div class="capability-grid">
+          <article class="capability-card reveal"><span class="capability-index">01</span><span class="capability-glyph">⌁</span><h3>Analyze</h3><p>Explore indicators, features and model probabilities before a signal becomes a decision.</p><span class="capability-link">Market context <b>→</b></span></article>
+          <article class="capability-card reveal delay-one"><span class="capability-index">02</span><span class="capability-glyph">◉</span><h3>Monitor</h3><p>Keep an eye on selected symbols, thresholds and model state as new candles close.</p><span class="capability-link">Signal watch <b>→</b></span></article>
+          <article class="capability-card reveal delay-two"><span class="capability-index">03</span><span class="capability-glyph">⌗</span><h3>Backtest</h3><p>Compare a strategy with historical data and make performance, drawdown and fees visible.</p><span class="capability-link">Evidence layer <b>→</b></span></article>
+          <article class="capability-card dark-card reveal delay-three"><span class="capability-index">04</span><span class="capability-glyph">↗</span><h3>Paper trade</h3><p>Record simulated positions and equity before considering any future live connection.</p><span class="capability-link">Safe execution <b>→</b></span></article>
+        </div>
+        <div class="console-card reveal delay-one">
+          <div class="console-top"><span class="console-title">quantivo / research console</span><span class="console-live"><i></i> connected</span></div>
+          <div class="console-inner">
+            <div class="console-sidebar"><span class="side-active">Overview</span><span>Watchlist</span><span>Models</span><span>Backtests</span><span>Paper trades</span></div>
+            <div class="console-main"><div class="console-main-head"><div><small>Model monitor</small><strong>BTC / USDT <em>1H</em></strong></div><span class="model-state">READY</span></div><div class="mini-bars"><i style="height:38%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:61%"></i><i style="height:87%"></i><i style="height:68%"></i><i style="height:94%"></i><i style="height:78%"></i><i style="height:100%"></i></div><div class="console-metrics"><span><small>Probability</small><b>0.62</b></span><span><small>Threshold</small><b>0.45</b></span><span><small>Signal</small><b class="teal-text">WATCH</b></span></div><div class="console-event"><span class="event-dot"></span><div><small>Latest event</small><strong>Closed candle evaluated</strong></div><time>1m ago</time></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="method" class="method-section">
       <div class="section-shell method-layout">
-        <div class="section-heading light reveal"><span class="section-kicker">02 / THE METHOD</span><h2>A calmer way to build a trading system.</h2><p>Quantivo is designed for repeatable research—not rushed predictions. Every signal is a hypothesis to test.</p></div>
+        <div class="section-heading light reveal"><span class="section-kicker">03 / THE METHOD</span><h2>A calmer way to build a trading system.</h2><p>Quantivo is designed for repeatable research—not rushed predictions. Every signal is a hypothesis to test.</p></div>
         <div class="method-steps">
           <div class="method-step reveal"><span>01</span><div><h3>Collect</h3><p>Ingest closed market candles and create a consistent feature set.</p></div></div>
           <div class="method-step reveal delay-one"><span>02</span><div><h3>Model</h3><p>Generate a probability-based signal with a versioned model.</p></div></div>
@@ -118,7 +140,7 @@
     </section>
 
     <section id="universe" class="content-section section-shell universe-section">
-      <div class="section-heading reveal"><span class="section-kicker">03 / MARKET UNIVERSE</span><h2>Designed to grow with the research.</h2><p>Symbols are configured independently so coverage can expand without changing the core workflow.</p></div>
+      <div class="section-heading reveal"><span class="section-kicker">04 / MARKET UNIVERSE</span><h2>Designed to grow with the research.</h2><p>Symbols are configured independently so coverage can expand without changing the core workflow.</p></div>
       <div class="universe-board reveal">
         <div class="universe-head"><span>Configured symbols</span><span class="board-status"><b></b> paper environment</span></div>
         <div class="asset-grid">
@@ -131,9 +153,40 @@
       </div>
     </section>
 
+    <section class="integration-section">
+      <div class="section-shell integration-layout">
+        <div class="section-heading reveal"><span class="section-kicker">05 / CONNECTIONS</span><h2>Start with the data you have. Grow when ready.</h2><p>Quantivo is built to keep the research layer independent from the execution layer.</p></div>
+        <div class="integration-list reveal delay-one">
+          <div class="integration-item"><span class="integration-logo csv">▤</span><div><strong>CSV research data</strong><small>Reliable offline datasets for repeatable tests.</small></div><span class="integration-status">AVAILABLE</span></div>
+          <div class="integration-item"><span class="integration-logo model">✦</span><div><strong>Model workspace</strong><small>Feature schema, threshold and version trail.</small></div><span class="integration-status">AVAILABLE</span></div>
+          <div class="integration-item"><span class="integration-logo ctrader">c</span><div><strong>cTrader Demo</strong><small>Planned connection for controlled validation.</small></div><span class="integration-status planned">PLANNED</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="roadmap-section section-shell">
+      <div class="section-heading reveal"><span class="section-kicker">06 / ROADMAP</span><h2>Progress in stages. Earn the next step.</h2><p>The product grows only when the evidence supports it.</p></div>
+      <div class="roadmap-line reveal">
+        <div class="roadmap-item current"><span class="roadmap-dot"></span><small>PHASE 01</small><strong>Backtesting</strong><p>Historical evaluation and feature checks.</p></div>
+        <div class="roadmap-item current"><span class="roadmap-dot"></span><small>PHASE 02</small><strong>Paper trading</strong><p>Simulated fills, fees and equity tracking.</p></div>
+        <div class="roadmap-item"><span class="roadmap-dot"></span><small>PHASE 03</small><strong>Demo connection</strong><p>Read-only and controlled cTrader validation.</p></div>
+        <div class="roadmap-item"><span class="roadmap-dot"></span><small>PHASE 04</small><strong>Review gate</strong><p>Independent performance and risk review.</p></div>
+      </div>
+    </section>
+
+    <section class="faq-section section-shell">
+      <div class="section-heading reveal"><span class="section-kicker">07 / FAQ</span><h2>Clear answers before the first signal.</h2></div>
+      <div class="faq-list reveal delay-one">
+        <details open><summary>Does Quantivo send real orders?</summary><p>The public project is paper-trading focused. A future broker connection will be introduced only after controlled testing and explicit approval.</p></details>
+        <details><summary>Is Quantivo an investment adviser?</summary><p>No. Quantivo is a technical research and simulation project. Its outputs are not personalized investment advice or a guarantee of performance.</p></details>
+        <details><summary>Which assets are supported?</summary><p>The current research universe is configured around BTC/USDT and ETH/USDT, with SOL/USDT, BNB/USDT and XRP/USDT planned as independent model tracks.</p></details>
+        <details><summary>Can I add another symbol?</summary><p>Yes. The application is designed so a new symbol can be added through configuration, followed by separate data preparation, model validation and paper-trading review.</p></details>
+      </div>
+    </section>
+
     <section id="about" class="closing-section section-shell reveal">
       <div class="closing-card">
-        <div><span class="section-kicker">04 / THE QUANTIVO STANDARD</span><h2>Build evidence before exposure.</h2><p>Quantivo is an evolving research project. Its purpose is to make assumptions visible, performance measurable and decisions easier to review.</p></div>
+        <div><span class="section-kicker">08 / THE QUANTIVO STANDARD</span><h2>Build evidence before exposure.</h2><p>Quantivo is an evolving research project. Its purpose is to make assumptions visible, performance measurable and decisions easier to review.</p></div>
         <a class="button button-primary" href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">Open the project <span>↗</span></a>
       </div>
     </section>
@@ -142,9 +195,9 @@
   <footer class="site-footer section-shell">
     <a class="brand" href="#top" aria-label="Quantivo home"><span class="brand-mark small" aria-hidden="true"><span class="mark-bar bar-one"></span><span class="mark-bar bar-two"></span><span class="mark-bar bar-three"></span></span><span class="brand-name">Quantivo</span></a>
     <p>Quantitative crypto intelligence for disciplined research.</p>
-    <span class="footer-meta">© <span id="year"></span> Quantivo · Paper trading only</span>
+    <span class="footer-meta">© <span id="year"></span> Quantivo · Paper trading only · v2 · <a href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">GitHub</a></span>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261002-v2"></script>
 </body>
 </html>
