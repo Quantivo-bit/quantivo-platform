@@ -1,203 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Quantivo is an AI-powered quantitative crypto research and paper-trading platform." />
-  <meta name="theme-color" content="#07142f" />
-  <title>Quantivo — Quantitative Crypto Intelligence</title>
-  <meta name="quantivo-release" content="v2-2026-10-02" />
-  <link rel="stylesheet" href="styles.css?v=20261002-v2" />
-</head>
-<body>
-  <div class="background-grid" aria-hidden="true"></div>
-
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Quantivo home">
-      <span class="brand-mark" aria-hidden="true">
-        <span class="mark-bar bar-one"></span>
-        <span class="mark-bar bar-two"></span>
-        <span class="mark-bar bar-three"></span>
-      </span>
-      <span class="brand-name">Quantivo</span>
-    </a>
-
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#platform">Platform</a>
-      <a href="#capabilities">Capabilities</a>
-      <a href="#method">Method</a>
-      <a href="#universe">Universe</a>
-      <a href="#roadmap">Roadmap</a>
-      <a class="nav-cta" href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c0a">
+  <meta name="description" content="Quantivo brings crypto research, strategy testing and paper trading into one focused workspace. Explore the interactive demo.">
+  <meta name="quantivo-release" content="v3-20261002">
+  <title>Quantivo — A clearer edge.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=4.0.0">
+  <script src="auth.js?v=4.0.0" defer></script><script src="core.js?v=4.0.0" defer></script>
+  <script src="script.js?v=4.0.0" defer></script><script src="home-auth.js?v=4.0.0" defer></script>
+<link rel="stylesheet" href="auth.css?v=4.0.0"></head>
+<body class="landing">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Quantivo home"><span class="brand-symbol" aria-hidden="true">q</span>quantivo<span class="brand-period">.</span></a>
+    <button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <div class="nav-dropdown"><button class="nav-trigger" aria-expanded="false" aria-controls="platform-menu">Platform <span>⌄</span></button><div id="platform-menu" class="nav-menu"><a href="workspace.html?view=overview" data-feature-access="overview"><strong>Overview</strong><small>Your research desk at a glance</small></a><a href="workspace.html?view=research" data-feature-access="research"><strong>Research copilot</strong><small>Turn questions into testable ideas</small></a><a href="workspace.html?view=markets" data-feature-access="markets"><strong>Market watch</strong><small>Keep your universe in focus</small></a></div></div>
+      <div class="nav-dropdown"><button class="nav-trigger" aria-expanded="false" aria-controls="capability-menu">Capabilities <span>⌄</span></button><div id="capability-menu" class="nav-menu"><a href="workspace.html?view=backtest" data-feature-access="backtest"><strong>Backtest lab</strong><small>Measure ideas after fees</small></a><a href="workspace.html?view=portfolio" data-feature-access="portfolio"><strong>Paper portfolio</strong><small>Practice with virtual funds</small></a><a href="workspace.html?view=rules" data-feature-access="rules"><strong>Rules & alerts</strong><small>Set conditions you can review</small></a></div></div>
+      <a href="#workflow">How it works</a><div class="nav-dropdown"><button class="nav-trigger" aria-expanded="false" aria-controls="resource-menu">Resources <span>⌄</span></button><div id="resource-menu" class="nav-menu"><a href="guide.html"><strong>Quick guide</strong><small>Start with the workflow</small></a><a href="#faq"><strong>Questions & answers</strong><small>Know what the demo can do</small></a><a href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noopener noreferrer"><strong>Open source project</strong><small>View the Quantivo repository</small></a></div></div>
     </nav>
+    <div class="auth-actions"><button class="signin-link" data-auth="signin">Sign in</button><button class="button small primary header-cta" data-auth="register">Register <span aria-hidden="true">↗</span></button></div>
   </header>
 
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse-dot"></span> Quantitative research, made practical</div>
-        <h1>Your AI research desk for <em>measured decisions.</em></h1>
-        <p class="hero-text">Quantivo brings market data, machine learning, strategy testing and paper trading into one disciplined workspace for crypto research.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#capabilities">Explore the workspace <span>↓</span></a>
-          <a class="button button-ghost" href="#method">See the workflow <span>→</span></a>
-        </div>
-        <div class="hero-note"><span class="shield-icon">◆</span> Paper-first by design. No real orders are sent from this public website.</div>
-        <div class="hero-chips"><span>AI-assisted research</span><span>Versioned models</span><span>Human review</span></div>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy wrap">
+        <span class="eyebrow-pill"><i class="status-dot"></i> MEET YOUR NEXT RESEARCH WORKSPACE <span>V3</span></span>
+        <h1>Your next move.<br><span class="gradient-text">Backed by research.</span></h1>
+        <p>Explore the market. Put your ideas to the test.<br>Build conviction before putting capital on the line.</p>
+        <div class="hero-actions"><a class="button primary" href="workspace.html?view=overview" data-feature-access="overview">Explore the demo <span aria-hidden="true">↗</span></a><a class="button secondary" href="#workflow"><span class="play-icon" aria-hidden="true">▷</span> See how it works</a></div>
+        <div class="hero-notes"><span>✓ Explore before you register</span><span>✓ Virtual funds only</span><span>✓ Your decisions, your control</span></div>
       </div>
-
-      <div class="hero-visual reveal delay-one" aria-label="Quantivo dashboard preview">
-        <div class="dashboard-window">
-          <div class="window-topbar">
-            <div class="window-dots"><i></i><i></i><i></i></div>
-            <span class="window-title">quantivo / paper desk</span>
-            <span class="window-status"><b></b> research mode</span>
-          </div>
-          <div class="dashboard-body">
-            <div class="dash-heading">
-              <div><span class="dash-label">Portfolio equity</span><strong>$10,482.64</strong><span class="positive">+4.83% <small>simulated</small></span></div>
-              <div class="period-tabs"><span>1D</span><span>1W</span><span class="active">1M</span><span>3M</span></div>
+      <div class="hero-stage wrap" id="platform">
+        <div class="stage-halo" aria-hidden="true"></div>
+        <div class="product-preview">
+          <div class="preview-topbar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>Quantivo workspace <span class="subtle">/ Overview</span></span><span class="tag demo">INTERACTIVE DEMO</span></div>
+          <div class="preview-layout">
+            <aside class="preview-sidebar"><span class="mini-brand"><span class="brand-symbol tiny">q</span> workspace</span><a class="selected" href="workspace.html">▦ <span>Overview</span></a><a href="workspace.html?view=research">✧ <span>Research copilot</span></a><a href="workspace.html?view=markets">◉ <span>Market watch</span></a><a href="workspace.html?view=backtest">⌁ <span>Backtest lab</span></a><a href="workspace.html?view=portfolio">▤ <span>Paper portfolio</span></a><a href="workspace.html?view=rules">⚑ <span>Rules & alerts</span></a><div class="preview-user"><span class="avatar">Q</span><div>Demo workspace<small>Saved on this device</small></div></div></aside>
+            <div class="preview-main">
+              <div class="preview-greeting"><div><span class="eyebrow">THE BIG PICTURE</span><h2>A little less noise.<br>A lot more perspective.</h2></div><span class="tag muted">SAMPLE DATA</span></div>
+              <div class="preview-metrics"><div><span>Virtual starting balance</span><strong>$10,000<span>.00</span></strong></div><div><span>Research universe</span><strong>05 <small>markets</small></strong></div><div><span>Execution mode</span><strong class="lime">Paper <small>only</small></strong></div></div>
+              <div class="preview-chart-card"><div class="chart-heading"><div class="asset-heading"><span id="hero-token" class="token btc">₿</span><div><strong id="hero-symbol">Bitcoin</strong><small id="hero-pair">BTC / USDT</small></div></div><div class="chart-price"><strong id="hero-price">$64,280.00</strong><span class="subtle">Illustrative snapshot</span></div></div><div class="chart-periods" role="group" aria-label="Chart range"><button class="active" data-range="30" aria-pressed="true">30 bars</button><button data-range="90" aria-pressed="false">90 bars</button><button data-range="180" aria-pressed="false">180 bars</button></div><div id="hero-chart" class="hero-chart" aria-live="polite"></div><div class="chart-caption"><span>Hourly bars · synthetic demo series</span><a href="workspace.html?view=backtest">Test an idea ↗</a></div></div>
             </div>
-            <div class="chart-wrap">
-              <svg class="equity-chart" viewBox="0 0 600 220" role="img" aria-label="Illustrative portfolio equity curve">
-                <defs>
-                  <linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0" stop-color="#21d8d0" stop-opacity=".28" />
-                    <stop offset="1" stop-color="#21d8d0" stop-opacity="0" />
-                  </linearGradient>
-                  <linearGradient id="lineFill" x1="0" x2="1">
-                    <stop offset="0" stop-color="#21d8d0" />
-                    <stop offset="1" stop-color="#8d7bff" />
-                  </linearGradient>
-                </defs>
-                <g class="chart-grid"><path d="M0 35H600M0 90H600M0 145H600M0 200H600" /></g>
-                <path class="chart-area" d="M0 178 C48 170 60 183 95 155 S142 160 174 122 S222 141 257 110 S303 121 338 91 S379 111 411 78 S458 98 488 59 S537 81 600 23 V220 H0 Z" />
-                <path class="chart-line" d="M0 178 C48 170 60 183 95 155 S142 160 174 122 S222 141 257 110 S303 121 338 91 S379 111 411 78 S458 98 488 59 S537 81 600 23" />
-                <circle class="chart-point" cx="600" cy="23" r="5" />
-              </svg>
-              <div class="chart-labels"><span>Sep 01</span><span>Sep 15</span><span>Sep 30</span></div>
-            </div>
-            <div class="dash-divider"></div>
-            <div class="signal-row">
-              <div class="signal-card"><span class="signal-icon cyan">↗</span><div><small>Latest signal</small><strong>BTC / USDT</strong></div><span class="signal-pill watch">WATCH</span></div>
-              <div class="signal-card"><span class="signal-icon violet">◌</span><div><small>Model confidence</small><strong>0.62</strong></div><span class="signal-pill neutral">1H MODEL</span></div>
-            </div>
+            <aside class="preview-copilot"><div class="copilot-heading"><span class="ai-spark">✧</span><div>Research copilot<small>Scripted demo</small></div><span class="status-dot"></span></div><div class="mini-chat user">What should I review before a BTC paper trade?</div><div class="mini-chat assistant"><span class="lime">Start with the evidence.</span><p>Compare the trend, check your assumptions, then test your risk limits.</p><div class="check-row">✓ Trend & volatility</div><div class="check-row">✓ Fees & drawdown</div><div class="check-row">✓ Position sizing</div></div><a class="research-result" href="workspace.html?view=research"><span>BTC research brief</span><small>Explore the sample analysis <b>↗</b></small></a><a class="mini-input" href="workspace.html?view=research">Ask a research question <span>↑</span></a></aside>
           </div>
+          <div class="preview-marketbar" role="group" aria-label="Preview market"><button class="active" data-market="BTC" aria-pressed="true"><span class="token btc">₿</span> Bitcoin <small>BTC</small></button><button data-market="ETH" aria-pressed="false"><span class="token eth">◆</span> Ethereum <small>ETH</small></button><button data-market="SOL" aria-pressed="false"><span class="token sol">≋</span> Solana <small>SOL</small></button><button data-market="BNB" aria-pressed="false"><span class="token bnb">◇</span> BNB <small>BNB</small></button><button data-market="XRP" aria-pressed="false"><span class="token xrp">×</span> XRP <small>XRP</small></button></div>
         </div>
-        <div class="floating-tag tag-top"><span></span> live data feed</div>
-        <div class="floating-tag tag-bottom"><span>✓</span> no live orders</div>
+        <div class="floating-note"><span class="round-check">✓</span><div>Built to test. Designed to learn.<small>Every order stays in the paper environment.</small></div></div>
       </div>
     </section>
 
-    <section class="proof-strip section-shell reveal">
-      <span class="proof-label">Built around a simple principle</span>
-      <div class="proof-statement">Observe <b>→</b> Model <b>→</b> Validate <b>→</b> Improve</div>
-      <span class="proof-label proof-right">One measured cycle at a time</span>
+    <section class="foundation wrap"><span>ONE CONNECTED WORKFLOW</span><div>Research <i>↗</i> Watch <i>↗</i> Backtest <i>↗</i> Paper trade <i>↗</i> Review</div><p>From a question to a decision you can explain.</p></section>
+
+    <section class="section wrap" id="capabilities">
+      <div class="section-heading centered"><span class="eyebrow lime">THE QUANTIVO TOOLKIT</span><h2>More than a chart.<br><span class="muted-text">Your entire research flow.</span></h2><p>Bring context, testing and control into the same conversation.</p></div>
+      <div class="feature-tabs" role="tablist" aria-label="Explore capabilities"><button id="tab-research" class="active" role="tab" aria-selected="true" aria-controls="feature-panel" data-feature="research">✧ Research copilot</button><button id="tab-rules" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-feature="rules">⚑ Rules & alerts</button><button id="tab-backtest" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-feature="backtest">⌁ Backtest lab</button></div>
+      <div class="feature-spotlight" id="feature-panel" role="tabpanel" aria-labelledby="tab-research"><div class="spotlight-copy"><span class="tag demo" id="feature-status">SCRIPTED DEMO</span><h3 id="feature-title">A better question.<br>A clearer perspective.</h3><p id="feature-description">Start with a market, a question or a strategy idea. Explore a structured research brief that makes the assumptions visible.</p><ul id="feature-list" class="check-list"><li>Market context in plain language</li><li>Technical indicators with explanations</li><li>A clear path from research to testing</li></ul><a id="feature-link" href="workspace.html?view=research" class="text-link">Try the research copilot <span>↗</span></a></div><div class="spotlight-visual"><div class="orb" aria-hidden="true"><span>q</span></div><div class="conversation-card"><div class="conversation-header"><span class="ai-spark">✧</span><strong>Quantivo copilot</strong><span class="tag demo" id="feature-card-badge">DEMO</span></div><p class="example-question" id="feature-question">Compare BTC and ETH before I paper trade.</p><div class="example-answer" id="feature-answer"><span class="lime">Let's make the comparison measurable.</span><p>Review the trend and volatility, then run the same strategy on both sample series.</p></div><a id="feature-card-link" class="button primary small" href="workspace.html?view=research">Open research <span>↗</span></a></div></div></div>
+      <div class="capability-grid"><a class="capability-card" href="workspace.html?view=markets" data-feature-access="markets"><span class="card-icon">◉</span><span class="card-arrow">↗</span><h3>Your market. In focus.</h3><p>A five-asset watchlist with search, favorites and a shared research view.</p><span class="card-foot">MARKET WATCH <span>LOCAL DEMO</span></span></a><a class="capability-card" href="workspace.html?view=portfolio" data-feature-access="portfolio"><span class="card-icon">▤</span><span class="card-arrow">↗</span><h3>Practice before exposure.</h3><p>Size a position, review the fees and confirm a trade with virtual funds.</p><span class="card-foot">PAPER PORTFOLIO <span>WORKING SIMULATION</span></span></a><a class="capability-card" href="workspace.html?view=journal" data-feature-access="journal"><span class="card-icon">≡</span><span class="card-arrow">↗</span><h3>Every decision leaves a trail.</h3><p>Keep a local journal of your paper orders and export the complete history.</p><span class="card-foot">TRADE JOURNAL <span>CSV EXPORT</span></span></a></div>
     </section>
 
-    <section id="platform" class="content-section section-shell">
-      <div class="section-heading reveal"><span class="section-kicker">01 / THE PLATFORM</span><h2>Clarity for every layer of the workflow.</h2><p>From raw candles to a logged paper fill, Quantivo keeps the path from data to decision visible and reviewable.</p></div>
-      <div class="feature-grid">
-        <article class="feature-card reveal"><div class="feature-number">01</div><div class="feature-icon icon-data">⌁</div><h3>Signal intelligence</h3><p>Combine price action, indicators and model probability into a readable market view.</p><a href="#method">Explore the method <span>→</span></a></article>
-        <article class="feature-card featured reveal delay-one"><div class="feature-number">02</div><div class="feature-icon icon-model">✦</div><h3>Model discipline</h3><p>Keep a distinct model schema, threshold and evaluation trail for every supported symbol.</p><a href="#universe">See the universe <span>→</span></a></article>
-        <article class="feature-card reveal delay-two"><div class="feature-number">03</div><div class="feature-icon icon-risk">◇</div><h3>Risk-first execution</h3><p>Test the system in a simulated environment before any discussion of real-money deployment.</p><a href="#about">Our principles <span>→</span></a></article>
-      </div>
-    </section>
+    <section class="evidence-section section" id="workflow"><div class="wrap"><div class="split-heading"><div><span class="eyebrow lime">A LITTLE STRUCTURE. A LOT OF CLARITY.</span><h2>Build evidence.<br><span class="muted-text">Then build confidence.</span></h2></div><p>Keep the human in the loop, from your first idea to the final review.</p></div><div class="steps"><article><span class="step-number">01</span><div class="step-art"><span class="file-chip">CSV <b>↗</b></span><span class="file-chip dim">SAMPLE DATA</span></div><h3>Start with your data</h3><p>Explore the sample markets or import historical candles in the backtest lab.</p></article><article><span class="step-number">02</span><div class="step-art"><span class="prompt-chip">✧ What does the evidence say?</span></div><h3>Research & test</h3><p>Examine the context. Compare a strategy with buy-and-hold after fees.</p></article><article><span class="step-number">03</span><div class="step-art"><span class="approve-chip">✓ Reviewed & confirmed</span></div><h3>Practice & review</h3><p>Approve a paper order, track your positions and learn from the journal.</p></article></div></div></section>
 
-    <section id="capabilities" class="capabilities-section section-shell">
-      <div class="section-heading reveal"><span class="section-kicker">02 / PRODUCT SUITE</span><h2>One workspace. Four ways to think.</h2><p>Bring the most important parts of systematic research into a single, calm interface.</p></div>
-      <div class="capability-layout">
-        <div class="capability-grid">
-          <article class="capability-card reveal"><span class="capability-index">01</span><span class="capability-glyph">⌁</span><h3>Analyze</h3><p>Explore indicators, features and model probabilities before a signal becomes a decision.</p><span class="capability-link">Market context <b>→</b></span></article>
-          <article class="capability-card reveal delay-one"><span class="capability-index">02</span><span class="capability-glyph">◉</span><h3>Monitor</h3><p>Keep an eye on selected symbols, thresholds and model state as new candles close.</p><span class="capability-link">Signal watch <b>→</b></span></article>
-          <article class="capability-card reveal delay-two"><span class="capability-index">03</span><span class="capability-glyph">⌗</span><h3>Backtest</h3><p>Compare a strategy with historical data and make performance, drawdown and fees visible.</p><span class="capability-link">Evidence layer <b>→</b></span></article>
-          <article class="capability-card dark-card reveal delay-three"><span class="capability-index">04</span><span class="capability-glyph">↗</span><h3>Paper trade</h3><p>Record simulated positions and equity before considering any future live connection.</p><span class="capability-link">Safe execution <b>→</b></span></article>
-        </div>
-        <div class="console-card reveal delay-one">
-          <div class="console-top"><span class="console-title">quantivo / research console</span><span class="console-live"><i></i> connected</span></div>
-          <div class="console-inner">
-            <div class="console-sidebar"><span class="side-active">Overview</span><span>Watchlist</span><span>Models</span><span>Backtests</span><span>Paper trades</span></div>
-            <div class="console-main"><div class="console-main-head"><div><small>Model monitor</small><strong>BTC / USDT <em>1H</em></strong></div><span class="model-state">READY</span></div><div class="mini-bars"><i style="height:38%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:72%"></i><i style="height:61%"></i><i style="height:87%"></i><i style="height:68%"></i><i style="height:94%"></i><i style="height:78%"></i><i style="height:100%"></i></div><div class="console-metrics"><span><small>Probability</small><b>0.62</b></span><span><small>Threshold</small><b>0.45</b></span><span><small>Signal</small><b class="teal-text">WATCH</b></span></div><div class="console-event"><span class="event-dot"></span><div><small>Latest event</small><strong>Closed candle evaluated</strong></div><time>1m ago</time></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="section wrap" id="connections"><div class="section-heading centered"><span class="eyebrow lime">YOUR WORKSPACE, CONNECTED</span><h2>Start simple.<br><span class="muted-text">Grow with your system.</span></h2><p>A clear view of what works today and what's coming next.</p></div><div class="connection-grid"><a class="connection-card" href="workspace.html?view=backtest"><span class="connection-icon lime">↧</span><h3>CSV datasets</h3><p>Import and backtest your historical candles locally.</p><span class="tag available">AVAILABLE IN DEMO</span></a><a class="connection-card" href="workspace.html?view=connections"><span class="connection-icon purple">Py</span><h3>Python research</h3><p>Connect your existing models and research pipeline.</p><span class="tag muted">PLANNED CONNECTION</span></a><a class="connection-card" href="workspace.html?view=connections"><span class="connection-icon">cT</span><h3>cTrader Demo</h3><p>A future broker demo connection for controlled validation.</p><span class="tag muted">PLANNED CONNECTION</span></a><a class="connection-card" href="workspace.html?view=connections"><span class="connection-icon">⌁</span><h3>TradingView alerts</h3><p>A future entry point for your chart-based signals.</p><span class="tag muted">PLANNED CONNECTION</span></a></div></section>
 
-    <section id="method" class="method-section">
-      <div class="section-shell method-layout">
-        <div class="section-heading light reveal"><span class="section-kicker">03 / THE METHOD</span><h2>A calmer way to build a trading system.</h2><p>Quantivo is designed for repeatable research—not rushed predictions. Every signal is a hypothesis to test.</p></div>
-        <div class="method-steps">
-          <div class="method-step reveal"><span>01</span><div><h3>Collect</h3><p>Ingest closed market candles and create a consistent feature set.</p></div></div>
-          <div class="method-step reveal delay-one"><span>02</span><div><h3>Model</h3><p>Generate a probability-based signal with a versioned model.</p></div></div>
-          <div class="method-step reveal delay-two"><span>03</span><div><h3>Paper trade</h3><p>Record simulated fills, fees, equity and drawdown without live orders.</p></div></div>
-          <div class="method-step reveal delay-three"><span>04</span><div><h3>Review</h3><p>Compare outcomes, improve the system and keep a human approval gate.</p></div></div>
-        </div>
-      </div>
-    </section>
+    <section class="control-section wrap"><div class="control-copy"><span class="eyebrow lime">BUILT AROUND YOUR CONTROL</span><h2>The final word<br>is always <span class="gradient-text">yours.</span></h2><p>Test ideas in a contained environment. Understand the assumptions. Approve each paper order before it enters the journal.</p><a href="workspace.html?view=portfolio" class="text-link">Explore paper trading ↗</a></div><div class="control-visual"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="control-center">✓</div><div class="orbit-label label-one">Review before confirm</div><div class="orbit-label label-two">Virtual funds only</div><div class="orbit-label label-three">Transparent fees</div><div class="orbit-label label-four">Local trade journal</div></div></section>
 
-    <section id="universe" class="content-section section-shell universe-section">
-      <div class="section-heading reveal"><span class="section-kicker">04 / MARKET UNIVERSE</span><h2>Designed to grow with the research.</h2><p>Symbols are configured independently so coverage can expand without changing the core workflow.</p></div>
-      <div class="universe-board reveal">
-        <div class="universe-head"><span>Configured symbols</span><span class="board-status"><b></b> paper environment</span></div>
-        <div class="asset-grid">
-          <div class="asset active"><span class="asset-token btc">₿</span><div><strong>BTC / USDT</strong><small>model available</small></div><span class="asset-state">READY</span></div>
-          <div class="asset active"><span class="asset-token eth">◆</span><div><strong>ETH / USDT</strong><small>model available</small></div><span class="asset-state">READY</span></div>
-          <div class="asset"><span class="asset-token sol">S</span><div><strong>SOL / USDT</strong><small>research queue</small></div><span class="asset-state queued">NEXT</span></div>
-          <div class="asset"><span class="asset-token bnb">◆</span><div><strong>BNB / USDT</strong><small>research queue</small></div><span class="asset-state queued">NEXT</span></div>
-          <div class="asset"><span class="asset-token xrp">X</span><div><strong>XRP / USDT</strong><small>research queue</small></div><span class="asset-state queued">NEXT</span></div>
-        </div>
-      </div>
-    </section>
+    <section class="section wrap faq-section" id="faq"><div class="section-heading"><span class="eyebrow lime">A FEW GOOD QUESTIONS</span><h2>Before your<br>first move.</h2><p>Know exactly what you're trying.</p><a href="guide.html" class="text-link">Read the quick guide ↗</a></div><div class="faq-list"><details open><summary>What can I actually do in this demo?</summary><p>Explore sample markets, use a scripted research assistant, backtest a moving-average strategy on sample or uploaded CSV data, place virtual orders, manage price rules and export your paper-trade journal.</p></details><details><summary>Is the research copilot connected to AI?</summary><p>Not yet. It provides scripted, context-aware demonstrations using sample data. A real AI connection and your Python/XGBoost model integration are planned and are not connected in this release.</p></details><details><summary>Are the prices and performance figures live?</summary><p>No. The market views use clearly marked synthetic sample data. The backtest lab can also calculate results from your own uploaded CSV. Neither sample results nor historical tests predict future returns.</p></details><details><summary>Does Quantivo place real trades?</summary><p>This version never sends orders to a broker or exchange. Paper orders only change your virtual workspace balance. cTrader integration is planned.</p></details><details><summary>Where are my data and demo settings stored?</summary><p>Signed-in users save paper trades, watchlists and rules to their account. Guest activity stays in this browser. Imported CSV files and backtest calculations stay on your device.</p></details><details><summary>Can I receive alerts when I close the site?</summary><p>Not in this release. Rules are checked when you click the sample-check button. Background scheduling, email and Telegram delivery are planned backend capabilities.</p></details></div></section>
 
-    <section class="integration-section">
-      <div class="section-shell integration-layout">
-        <div class="section-heading reveal"><span class="section-kicker">05 / CONNECTIONS</span><h2>Start with the data you have. Grow when ready.</h2><p>Quantivo is built to keep the research layer independent from the execution layer.</p></div>
-        <div class="integration-list reveal delay-one">
-          <div class="integration-item"><span class="integration-logo csv">▤</span><div><strong>CSV research data</strong><small>Reliable offline datasets for repeatable tests.</small></div><span class="integration-status">AVAILABLE</span></div>
-          <div class="integration-item"><span class="integration-logo model">✦</span><div><strong>Model workspace</strong><small>Feature schema, threshold and version trail.</small></div><span class="integration-status">AVAILABLE</span></div>
-          <div class="integration-item"><span class="integration-logo ctrader">c</span><div><strong>cTrader Demo</strong><small>Planned connection for controlled validation.</small></div><span class="integration-status planned">PLANNED</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="roadmap" class="roadmap-section section-shell">
-      <div class="section-heading reveal"><span class="section-kicker">06 / ROADMAP</span><h2>Progress in stages. Earn the next step.</h2><p>The product grows only when the evidence supports it.</p></div>
-      <div class="roadmap-line reveal">
-        <div class="roadmap-item current"><span class="roadmap-dot"></span><small>PHASE 01</small><strong>Backtesting</strong><p>Historical evaluation and feature checks.</p></div>
-        <div class="roadmap-item current"><span class="roadmap-dot"></span><small>PHASE 02</small><strong>Paper trading</strong><p>Simulated fills, fees and equity tracking.</p></div>
-        <div class="roadmap-item"><span class="roadmap-dot"></span><small>PHASE 03</small><strong>Demo connection</strong><p>Read-only and controlled cTrader validation.</p></div>
-        <div class="roadmap-item"><span class="roadmap-dot"></span><small>PHASE 04</small><strong>Review gate</strong><p>Independent performance and risk review.</p></div>
-      </div>
-    </section>
-
-    <section class="faq-section section-shell">
-      <div class="section-heading reveal"><span class="section-kicker">07 / FAQ</span><h2>Clear answers before the first signal.</h2></div>
-      <div class="faq-list reveal delay-one">
-        <details open><summary>Does Quantivo send real orders?</summary><p>The public project is paper-trading focused. A future broker connection will be introduced only after controlled testing and explicit approval.</p></details>
-        <details><summary>Is Quantivo an investment adviser?</summary><p>No. Quantivo is a technical research and simulation project. Its outputs are not personalized investment advice or a guarantee of performance.</p></details>
-        <details><summary>Which assets are supported?</summary><p>The current research universe is configured around BTC/USDT and ETH/USDT, with SOL/USDT, BNB/USDT and XRP/USDT planned as independent model tracks.</p></details>
-        <details><summary>Can I add another symbol?</summary><p>Yes. The application is designed so a new symbol can be added through configuration, followed by separate data preparation, model validation and paper-trading review.</p></details>
-      </div>
-    </section>
-
-    <section id="about" class="closing-section section-shell reveal">
-      <div class="closing-card">
-        <div><span class="section-kicker">08 / THE QUANTIVO STANDARD</span><h2>Build evidence before exposure.</h2><p>Quantivo is an evolving research project. Its purpose is to make assumptions visible, performance measurable and decisions easier to review.</p></div>
-        <a class="button button-primary" href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">Open the project <span>↗</span></a>
-      </div>
-    </section>
+    <section class="final-cta wrap"><div class="cta-glow" aria-hidden="true"></div><span class="eyebrow">LESS GUESSWORK. MORE PERSPECTIVE.</span><h2>Make your next idea<br><span class="gradient-text">a measured one.</span></h2><button class="button primary" data-auth="register">Create your workspace <span>↗</span></button><p>Your research, watchlists and paper decisions. One workspace.</p></section>
   </main>
+  <footer class="site-footer wrap"><div class="footer-top"><div><a class="brand" href="index.html"><span class="brand-symbol">q</span>quantivo<span class="brand-period">.</span></a><p>A clearer edge in crypto research.<br>Built for curiosity. Grounded in evidence.</p></div><div><h3>Explore</h3><a href="workspace.html?view=research" data-feature-access="research">Research copilot</a><a href="workspace.html?view=backtest" data-feature-access="backtest">Backtest lab</a><a href="workspace.html?view=portfolio" data-feature-access="portfolio">Paper portfolio</a></div><div><h3>Learn</h3><a href="guide.html">Quick guide</a><a href="#connections">Connection roadmap</a><a href="#faq">Questions & answers</a></div><div><h3>Project</h3><a href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="guide.html#privacy">Demo privacy</a><a href="guide.html#limitations">Demo limitations</a></div></div><div class="footer-bottom"><span>© <span data-year>2026</span> Quantivo</span><span class="release-mark">V4 · PRODUCT EXPERIENCE</span><span>Research & simulation only</span></div><p class="risk-note">Market views contain illustrative data. This demo does not provide personalized investment advice or connect to a live trading account. Historical and simulated results do not guarantee future performance.</p></footer>
 
-  <footer class="site-footer section-shell">
-    <a class="brand" href="#top" aria-label="Quantivo home"><span class="brand-mark small" aria-hidden="true"><span class="mark-bar bar-one"></span><span class="mark-bar bar-two"></span><span class="mark-bar bar-three"></span></span><span class="brand-name">Quantivo</span></a>
-    <p>Quantitative crypto intelligence for disciplined research.</p>
-    <span class="footer-meta">© <span id="year"></span> Quantivo · Paper trading only · v2 · <a href="https://github.com/Quantivo-bit/quantivo-platform" target="_blank" rel="noreferrer">GitHub</a></span>
-  </footer>
-
-  <script src="script.js?v=20261002-v2"></script>
+  <dialog id="auth-dialog" class="auth-dialog" aria-labelledby="auth-title"><div class="auth-shell"><button class="dialog-close" data-close-auth aria-label="Close authentication window">×</button><div class="auth-visual"><span class="eyebrow lime">YOUR RESEARCH DESK</span><h2>Room to think<br><span class="gradient-text">before you act.</span></h2><p>Build your research routine. Test ideas and keep a journal with virtual funds.</p><div class="auth-benefits"><span>✓ Save your paper journal</span><span>✓ Keep your watchlists</span><span>✓ Review before every order</span></div></div><div class="auth-form-wrap"><div id="auth-service" class="auth-service" role="status">Checking account availability…</div><div class="auth-tabs" role="tablist"><button id="auth-register-tab" class="active" role="tab" aria-controls="auth-register-panel" aria-selected="true" data-auth-tab="register">Register</button><button id="auth-signin-tab" role="tab" aria-controls="auth-signin-panel" aria-selected="false" tabindex="-1" data-auth-tab="signin">Sign in</button></div><div id="auth-register-panel" class="auth-panel" role="tabpanel" aria-labelledby="auth-register-tab"><span class="tag demo">FREE DEMO WORKSPACE</span><h2 id="auth-title">Create your workspace</h2><p class="auth-intro">A dedicated space for your paper portfolio, watchlist and price rules.</p><form id="register-form" novalidate><label class="field"><span>Your name</span><input id="register-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="80" required placeholder="Mehdi"></label><label class="field"><span>Email</span><input id="register-email" name="email" type="email" autocomplete="email" maxlength="160" required placeholder="you@example.com"></label><label class="field"><span>Password</span><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="15" maxlength="128" required placeholder="At least 15 characters"></label><label class="consent-row"><input id="register-consent" type="checkbox" required><span>I understand this workspace uses virtual funds. I have read the <a href="guide.html#privacy" target="_blank" rel="noopener">privacy and usage notes</a>.</span></label><p id="register-error" class="auth-error" role="alert"></p><button class="button primary wide" type="submit">Create workspace <span>↗</span></button></form><p class="auth-switch">Already have an account? <button data-auth-tab="signin">Sign in</button></p></div><div id="auth-signin-panel" class="auth-panel" role="tabpanel" aria-labelledby="auth-signin-tab" hidden><span class="tag demo">WELCOME BACK</span><h2 id="signin-title">Sign in to Quantivo</h2><p class="auth-intro">Pick up where you left off.</p><form id="signin-form" novalidate><label class="field"><span>Email</span><input id="signin-email" name="email" type="email" autocomplete="email" maxlength="160" required placeholder="you@example.com"></label><label class="field"><span>Password</span><input id="signin-password" name="password" type="password" autocomplete="current-password" maxlength="128" required placeholder="Your password"></label><p id="signin-error" class="auth-error" role="alert"></p><button class="button primary wide" type="submit">Sign in <span>↗</span></button></form><p class="auth-switch">New to Quantivo? <button data-auth-tab="register">Create a workspace</button></p></div><button id="guest-entry" class="guest-link">Explore without an account →</button><p id="auth-footnote" class="auth-footnote"></p></div></div></dialog>
 </body>
 </html>
